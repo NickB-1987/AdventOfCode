@@ -6,12 +6,13 @@ https://adventofcode.com/2022
 
 | Person | Language |
 |----------|----------|
-| [AndyVicks](https://github.com/AndyVicks) | ? |
-| [Cameron](https://github.com/CameronAndersonWMFT) | ? |
-| [Jackbennett](https://github.com/Jackbennett) | Rust |
-| [NickB-WM](https://github.com/NickB-WM) | Switf | 
-| [NickFP-WM](https://github.com/NickFrederickPreeceWM) | C# |
-| [Susannah-Parsons](https://github.com/Susannah-Parsons) | C++ |
+| Andy | ? |
+| Cameron | go |
+| Jackbennett | Rust |
+| Nick B | Switf | 
+| Nick FP | C# |
+| Nick M | Javascript | 
+| Susannah | C++ |
 
 ## How To;
 
