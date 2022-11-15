@@ -13,6 +13,7 @@ https://adventofcode.com/2022
 | Nick FP | C# |
 | Nick M | Javascript | 
 | Susannah | C++ |
+| obrunnock | Python |
 
 ## How To;
 
