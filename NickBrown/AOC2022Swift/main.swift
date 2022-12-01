@@ -9,7 +9,9 @@
 import Foundation
 
 func day_1(){
-    print(day1(input_file:"/Users/Nick/Documents/GitHub/AdventOfCode/NickBrown/AOC2022Swift/day1.txt").max())
+    let a = day1(input_file:"/Users/Nick/Documents/GitHub/AdventOfCode/NickBrown/AOC2022Swift/day1.txt")
+    print("Day 1 Part 1:\(a.max())")
+    print("Day 1 Part 2:\(a.topThree())")
 }
 day_1()
 

@@ -29,4 +29,7 @@ class day1{
         let max = _sums.max()!
         return max
     }
+    func topThree()->Int{
+        return _sums.sorted().reversed()[...2].reduce(0,+)
+    }
 }
