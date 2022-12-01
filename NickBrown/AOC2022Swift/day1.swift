@@ -1,3 +1,4 @@
+
 import Foundation
 
 var data = openInputFile(input_file: "day1.txt")
@@ -12,8 +13,8 @@ class day1{
         self._sums = []
     }
     func open_input(){
-        let file_contents = try! String(contentsOfFile: input_file).split(separator: "\n\n")
-        for group in file_contents{
+        let file_contents = try! String(contentsOfFile: input_file)
+        for group in file_contents.components(separatedBy: "\n\n"){
             elves.append(group.split(separator:"\n").map { Int($0)! })
         }
     }
@@ -26,7 +27,6 @@ class day1{
     func max()->Int{
         sums()
         let max = _sums.max()!
-        print(max)
         return max
     }
 }
