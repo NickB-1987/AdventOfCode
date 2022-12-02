@@ -8,7 +8,7 @@ pub fn parse_numbers(input: &str) -> IResult<&str, u32> {
     map_res(digit1, u32::from_str)(input)
 }
 
-#[derive(Debug, Eq, PartialEq)]
+#[derive(Debug, Eq, PartialEq, Clone)]
 pub struct Elf {
     pub food: Vec<u32>,
 }
