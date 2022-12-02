@@ -16,14 +16,14 @@ fn main() {
     );
 
     // Find the Elf carrying the most Calories
-    let most_calaries = expedition
+    let most_calories = expedition
         .elves
         .iter()
         .map(|e| e.energy())
         .max()
         .unwrap_or(0);
     println!(
-        "{} is the most calaries carried by any single Elf",
-        most_calaries
+        "{} is the most Calories carried by any single Elf",
+        most_calories
     );
 }
