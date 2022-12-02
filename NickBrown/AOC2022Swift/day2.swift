@@ -4,13 +4,12 @@
 //
 //  Created by Nick Brown on 02/12/2022.
 //
-// A= rock, B = paper, C = scissors
-// X= rock, Y = paper, Z = scissors
 import Foundation
 
 class Day2{
     let rps = ["X": 1, "Y": 2, "Z": 3]
     let rps2 = ["X": 0, "Y": 3, "Z": 6]
+    let rpsmap = ["A":"X", "B":"Y", "C":"Z"]
     let WIN: Int = 6
     let DRAW: Int = 3
     let LOSE: Int = 0
@@ -37,22 +36,41 @@ class Day2{
             }
             else if (plays[1] == "X" && plays[0] == "C") || (plays[1] == "Y" && plays[0] == "A") || (plays[1] == "Z" && plays[0] == "B"){
                 score += WIN
-                
             }
         }
         return score
     }
-    // x = lose, y = draw, z = win
+
     func pt2()->Int{
         var score: Int = 0
         for plays in data{
             score += rps2[plays[1]]!
-            
-            
-            
+            if plays[1] == "Z"{
+                if plays[0] == "A"{
+                    score += rps["Y"]!
+                }
+                else if plays[0] == "B"{
+                    score += rps["Z"]!
+                }
+                else if plays[0] == "C"{
+                    score += rps["X"]!
+                }
+            }
+            else if plays[1] == "Y"{
+                score += rps[rpsmap[plays[0]]!]!
+            }
+            else{
+                if plays[0] == "A"{
+                    score += rps["Z"]!
+                }
+                else if plays[0] == "B"{
+                    score += rps["X"]!
+                }
+                else if plays[0] == "C"{
+                    score += rps["Y"]!
+                }
+            }
         }
-        
-        
         return score
     }
 }
