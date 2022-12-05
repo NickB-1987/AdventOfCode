@@ -45,6 +45,15 @@ func day_4(){
     print("Day 4 Part 1: \(d.overlaps)")
     print("Day 4 Part 2: \(d.pt2)")
 }
- day_4()
+day_4()
 let day4finish = CACurrentMediaTime()
 print("Day 4 execution time: \(day4finish - day3finish)")
+
+func day_5(){
+    let e = Day5(filename: "/Users/Nick/Documents/GitHub/AdventOfCode/NickBrown/AOC2022Swift/day5.txt")
+    print("Day 5 Part 1: \(e.pt1)")
+    print("Day 5 Part 2: \(e.pt2)")
+}
+ day_5()
+let day5finish = CACurrentMediaTime()
+print("Day 5 execution time: \(day5finish - day4finish)")
