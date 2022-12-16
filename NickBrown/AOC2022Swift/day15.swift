@@ -45,7 +45,7 @@ class Day15: AdventOfCodeDay{
     part1ans = part1(2000000)
     }
     func part1(_ row: Int)->Int{
-        var noBeaconPoints: Set<[Int]> = Set(sensors.flatMap { $0.pt1(row) })
+        let noBeaconPoints: Set<[Int]> = Set(sensors.flatMap { $0.pt1(row) })
         let beacons = sensors.map { [$0.bx, $0.by] }
         return noBeaconPoints.count - noBeaconPoints.intersection(beacons).count
     }
