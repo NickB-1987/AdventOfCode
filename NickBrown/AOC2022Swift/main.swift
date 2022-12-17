@@ -138,7 +138,9 @@ import QuartzCore
 
 func day_15(){
     let n = Day15("/Users/Nick/Documents/GitHub/AdventOfCode/NickBrown/AOC2022Swift/inputs/day15.txt", "\n")
-    print(n.part1ans)
+    print("Day 15 Part 1: \(n.part1ans)")
+    n.part2()
+    print("Day 15 Part 2: \(n.part2ans)")
 }
 day_15()
 let day15finish = CACurrentMediaTime()
